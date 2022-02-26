@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/signin.css">
+        
+    <title>navbar</title>
+
+    <style>
+
+        #navbar{
+            width: 100%;
+            
+        }
+        #navbar *{
+            font-family: Brandon Text,Arial,sans-serif;
+        }
+
+        #international_shipping{
+            width: 100%;
+            background-color: black;
+            height: 5%;
+            text-align: center;
+        }
+        #international_para *{
+            font-family: Brandon Text,Arial,sans-serif;
+            color: #fff;
+            cursor: pointer;
+            line-height: 3em;
+            position: relative;
+            
+
+        }
+        #img_austria, #austria_img{
+            background-color: black;
+            display: flex;
+            float: right;
+            border:0;
+            line-height: 1.5em;
+            position: relative;
+            align-items: center;
+
+        }
+        #img_austria{
+            padding:0px 15px;
+            padding-top:  3px;
+            font-size:11px
+        }
+
+        #bar_rightsider{
+            cursor: pointer;
+            display:flex;
+            /* border: 1px solid black; */
+        }
+        #bar_rightsider > div{
+            margin-right: 40px;
+        }
+        /* #cart_img{
+            width: 5%;
+            padding: 0px;
+        } */
+
+        #nav_cat_div{
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+        #nav_catog{
+            justify-content: space-between;
+            list-style: none;
+            display:flex; 
+            line-height:1.5;
+        }
+        #select_cat{
+            /* padding: 0px 55px; */
+            color:#393939; 
+            cursor: pointer;
+        }
+        #select_cat_Sale{
+            margin-left: -10px;
+            cursor: pointer;
+            color:red;
+        }
+        #select_cat_brand{
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        /* hover - stgyles -------------------------------*/
+        #select_cat_Sale:hover{
+            border-bottom: 2px solid red;
+        }
+        #select_cat_brand:hover{
+            border-bottom: 2px solid black;
+        }
+        #select_cat:hover{
+            border-bottom: 2px solid black;
+        }
+
+        #query{
+            border: 0px;
+            font-family: Brandon Text,Arial,sans-serif;
+            font-size: medium;
+            width: 100%;
+            margin-left: -25px;
+            margin-top: -35px;  
+            padding-top: 5px; 
+            
+        }
+      
+
+        #bar_rightsider{
+            /* border: 1px solid red; */
+            text-align: center;
+            width: 40%;
+           margin-top: -15px;
+            align-content: center;
+           
+        }
+
+        .main-menu li{
+            display: inline-block;
+            padding: 10px 0px;
+            width: 180px;
+           
+            font-family:  Brandon Text,Arial,sans-serif;
+            transition: 1s; 
+            /* border: 1px solid green;  */
+            cursor: pointer;
+            
+        }
+
+        .sub-menu{
+            display: none;
+            /* list-style-type: none; */
+            position: absolute;
+            border: 1px solid gainsboro;
+            margin-top: 5px;
+            margin-left: -20px;
+            box-shadow: 1px 1px 1px grey ;
+            text-align: left;
+            width: 220px;
+            padding-top: 15px;
+            z-index: 1;
+            background-color: white;
+         
+
+            
+        }
+
+        /* .sub-menu:before{
+            content : "";
+            width: 0px;
+            height: 0px;
+            border-left: 15px solid pink;
+            border-right: 15px solid pink;
+            border-bottom: 30px solid pink;
+            position: absolute;
+            
+        } */
+
+        .sub-menu >li{
+            padding: 10px;
+            font-family:  Brandon Text,Arial,sans-serif; 
+        }
+
+        .main-menu li:hover, .sub-menu li:hover{
+            background: rgb(235, 235, 235);
+        }
+        .main-menu li:hover .sub-menu{
+            display: block;
+        }
+
+        #nord_img{
+            width: 30%;
+        }
+        #nordstorm{
+            margin-left: 25px;
+            /* border: 2px solid black; */
+            width: 60%;   
+        }
+        #nordstorm_searchbar{
+            display: flex;
+            height: 50px;
+        }
+
+        #l1{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    
+
+    <div id="navbar">
+        <!-- black line = done  -->
+        <div id="international_shipping">
+           
+            <p id="international_para">
+                <strong>
+                    Shipping outside of the U.S. or Canada?
+
+                    <a inter_shipping_link href="https://www.nordstrom.com/browse/customer-service/international-orders?jid=j011535-13614&cid=00000&cm_sp=merch-_-multi-div_13614_j011535-_-swptcos_corp_persnav_info&#anchor-link-shipping-charges">Learn bout International Shipping</a>
+
+                </strong>
+
+                <button id="img_austria">
+                    <img
+                        id="austria_img"
+                     src="https://n.nordstrommedia.com/alias/AU.gif" alt="">
+
+                    <p>
+                        <strong id="img_austria">Australia</strong>
+                    </p>
+                </button>
+
+            </p>
+
+        </div>
+        
+          <!-- second line nord =  -->
+      <div id="nordstorm_searchbar">
+
+
+        <div id="nordstorm">
+            <a href="home.html">
+                <img 
+                id="nord_img"
+            src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg" alt="">
+            </a>
+        </div>
+    
+        <div id="bar_rightsider">
+           
+            <ul  class="main-menu">
+            <li>Search
+                <ul class="sub-menu">
+                     <input placeholder="Search" id="query">
+                </ul>  
+            </li>
+            <!-- <a href="login.html">Login</a> -->
+                   
+           
+            <li>Sign In
+                <ul class="sub-menu">
+                    <li id="l1"><a href="./Html/signin.html">Sign In | Create Account</a></li>
+                    <li><a href="./Html/signin.html">Your account</a></li>
+                    <li><a href="">The Nordy Club Reward</a></li>
+                    <li><a href="./Html/Checkout.html">Shipping Adresses</a></li>
+                    <li><a href="./Html/payment.html">Payment Method</a></li>
+                    <li><a href="./Html/women.html">Looks</a></li>
+                    <li><a href="./Html/Checkout.html">Pay & Manage Nordstrom Card</a></li>
+                    <li><a href="./Html/signin.html">Account Setting</a></li>
+                    <li><a href="./Html/signin.html">Passwors & Personal info</a></li>
+                    <li><a href="./Html/signin.html">Email & mail Preference</a></li>
+                    <li><a href="homepage.html">Stores & Event</a></li>
+                    <li><a href="homepage.html">We're here to help, 24/7</a></li>
+                    <li><a href="homepage.html">Contact us</a></li>   
+                </ul>
+            </li>
+            <li>  <a href="/Html/Cart.html">Cart</a> </li>
+            </ul>
+    
+        </div>
+    
+        </div>
+    
+
+
+
+
+        <!-- third line = cateogary -->
+        <div id="nav_cat_div">
+
+            <ul id="nav_catog">
+                <li id="select_cat_Sale" >Sale</li>
+                <li id="select_cat" >Women</li>
+                <li id="select_cat">Men</li>
+                <li id="select_cat">Kids</li>
+                <li id="select_cat">Young Adult</li>
+                <li id="select_cat">Active wear</li>
+                <li id="select_cat">Home</li>
+                <li id="select_cat">Beauty</li>
+                <li id="select_cat">Designer</li>
+                <li id="select_cat">Gifts</li>
+                <li id="select_cat_brand">Brands</li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- <script src="/scripts/signin.js"></script> -->
