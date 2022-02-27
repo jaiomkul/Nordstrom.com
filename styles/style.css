@@ -5,11 +5,9 @@
   #midContainer{
       display: grid;
       grid-template-columns: 18% 82%;
-      border: solid 1px red;
+      /* border: solid 1px red; */
   }
-  #sideFilter{
-      border: solid 1px red;
-  }
+  
 
   #mainFilter{
       width: 210px; 
@@ -22,13 +20,15 @@
       height: 100%;
       width: 200px;
       position: fixed;
+      /* --- */
       z-index: 1;
-      top: 0;
+      top: 25%;
       left: 0;
       background-color: rgb(255, 255, 255);
       overflow-x: hidden;
       /* overflow: scroll; */
       padding: 0px 0px 0 20px;
+      
   }
   
   /* #subDivFilter::-webkit-scrollbar {
@@ -45,7 +45,7 @@
     padding: 18px;
     width: 100%;
     text-align: left;
-    font-size: 14px;
+    font-size: 17px;
     transition: 0.4s;
     font-family: Brandon Text,Arial,sans-serif;;
     border: 1px solid black;
@@ -95,7 +95,7 @@
     user-select: none;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 14px;
     color: #393939;
     font-family: Brandon Text,Arial,sans-serif;
   }
